@@ -1,6 +1,6 @@
 function [M, HCP_subj] = import_HCP_data(datadir)
     
-    % datadir = the path to the HCP data set scuh that REST1 
+    % datadir = the path to the HCP data set, where REST1 
     % and REST2 with Left-Right and Right-Left acquisitions are stored in
     % separate folders: REST_LR, REST_RL, REST2_LR, REST2_RL.
     % e.g. datadir = '/mnt/store1/mridata2/mri_group/HCP_data/HCP_900_DATA/'    
