@@ -1,4 +1,4 @@
-function [disimilirities_global,reproducibility] = REST1_REST2_reproducibility(M,HCP_subj,S_opt_all,label_134_cort,K_max,local_global_flag)
+function [disimilirities_global,reproducibility] = rest1_rest2_reproducibility(M,HCP_subj,S_opt_all,label_134_cort,K_max,local_global_flag)
 
     % M is an output of the function "import_HCP_data.m" containing the
     % rest scan data with the following format:

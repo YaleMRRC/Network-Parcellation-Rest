@@ -1,4 +1,4 @@
-function [DB,DB_Shen,DB_Wang_7,DB_Wang_17,Dunn,Dunn_Shen,Dunn_Wang_7,Dunn_Wang_17] = Comparison_DB_Dunn(M,HCP_subj,label_134_cort,K_max,index_global,Maj,index_global_Shen,Maj_Shen,index_global_Wang_7,Maj_Wang_7,index_global_Wang_17,Maj_Wang_17)
+function [DB,DB_Shen,DB_Wang_7,DB_Wang_17,Dunn,Dunn_Shen,Dunn_Wang_7,Dunn_Wang_17] = comparison_db_dunn(M,HCP_subj,label_134_cort,K_max,index_global,Maj,index_global_Shen,Maj_Shen,index_global_Wang_7,Maj_Wang_7,index_global_Wang_17,Maj_Wang_17)
 
     % M is an output of the function "import_HCP_data.m" containing the
     % rest scan data with the following format:
@@ -31,10 +31,7 @@ function [DB,DB_Shen,DB_Wang_7,DB_Wang_17,Dunn,Dunn_Shen,Dunn_Wang_7,Dunn_Wang_1
     % Maj_Wang_7, Maj_Wang_17 = the group-level parcellation scheme from Yeo's 7 and
     % 17 network
 
-     
-   
-    % addpath(genpath('/home/mehraveh/documents/MATLAB/somtoolbox/'))
- 
+        
     subjsLR = intersect(HCP_subj{1,1},HCP_subj{2,1});
     subjsRL = intersect(HCP_subj{1,2},HCP_subj{2,2});
     subjs_all = intersect(subjsLR,subjsRL);

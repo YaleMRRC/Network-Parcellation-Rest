@@ -1,4 +1,4 @@
-function [Feature_imp_sum,mot_female,mot_male] = Feature_importance_analysis(feature_imp,Mot_825,gender_825)
+function [Feature_imp_sum,mot_female,mot_male] = feature_importance_analysis(feature_imp,Mot_825,gender_825)
 
     % feature_imp = a 268x1 (or 188x1) vector including the importance
     % score of each feature (i.e. node) in the gradient boosting machine
@@ -13,7 +13,6 @@ function [Feature_imp_sum,mot_female,mot_male] = Feature_importance_analysis(fea
     % mot_female and mote_male is the heaadmotion values for female and
     % male subjects respectively
 
-%     load /Users/Mehraveh/Documents/MATLAB/Parcellation/October3/Prediction_Gender_Feature_importances.mat
     feature_imp(1,:)=[]
     A = feature_imp';
     A_max = max(sum(A,2));

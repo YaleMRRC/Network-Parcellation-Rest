@@ -1,4 +1,4 @@
-function [S_opt_all, index_global, Maj, F] = Parcellation_rest(M,HCP_subj,label_134_cort,K_max)
+function [S_opt_all, index_global, Maj, F] = parcellation_rest(M,HCP_subj,label_134_cort,K_max)
     
 
     % M is an output of the function "import_HCP_data.m" containing the
@@ -22,12 +22,6 @@ function [S_opt_all, index_global, Maj, F] = Parcellation_rest(M,HCP_subj,label_
     % F = The frequency of the votes for eahc node-to-network assignment in
     % the group-level parcellation
     
-    % addpath(genpath('/home/mehraveh/documents/MATLAB/Parcellation/'))
-    % filesRest1LR = dir(['/mnt/store1/mridata2/mri_group/HCP_data/HCP_900_DATA/REST_LR/matrices/*_GSR_roimean.txt']);
-    % filesRest1RL = dir(['/mnt/store1/mridata2/mri_group/HCP_data/HCP_900_DATA/REST_RL/matrices/*_GSR_roimean.txt']);
-    % filesRest2LR = dir(['/mnt/store1/mridata2/mri_group/HCP_data/HCP_900_DATA/REST2_LR/matrices/*_GSR_roimean.txt']);
-    % filesRest2RL = dir(['/mnt/store1/mridata2/mri_group/HCP_data/HCP_900_DATA/REST2_RL/matrices/*_GSR_roimean.txt']);
-
     % Parcellation with all subjects - Rest8+Rest9+LR+RL concatenated all)
 
     subjsLR = intersect(HCP_subj{1,1},HCP_subj{2,1});
@@ -40,7 +34,6 @@ function [S_opt_all, index_global, Maj, F] = Parcellation_rest(M,HCP_subj,label_
     RL2 = arrayfun(@(x)find(HCP_subj{2,2}==x,1),subjs_all);
 
 
-    load /home/mehraveh/documents/MATLAB/Parcellation/label_134_cort.mat  % 1:cortical 3:cerebellum, 4:cortical
     cortical_boolean = input('Do you want to consider only the cortical regions? (1: cortical, 0: whole brain)')
     if cortical_boolean == 1
         vect = [3];

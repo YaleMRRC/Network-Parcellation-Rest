@@ -1,4 +1,4 @@
-function [GREEDY,UpperBound] = Greedy_upperbound(M,HCP_subj,S_opt_all,label_134_cort,K_max)
+function [GREEDY,UpperBound] = greedy_upperbound(M,HCP_subj,S_opt_all,label_134_cort,K_max)
 
     % M is an output of the function "import_HCP_data.m" containing the
     % rest scan data with the following format:
@@ -19,10 +19,7 @@ function [GREEDY,UpperBound] = Greedy_upperbound(M,HCP_subj,S_opt_all,label_134_
     % GREEDY = the greedy estimation of optimum value
     % UpperBound = the upperbound to the optimum value calculated in a
     % data-drive manner
-    
-    % load /Users/Mehraveh/Documents/MATLAB/M_Rests.mat
-
-
+       
 
     subjsLR = intersect(HCP_subj{1,1},HCP_subj{2,1});
     subjsRL = intersect(HCP_subj{1,2},HCP_subj{2,2});

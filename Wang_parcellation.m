@@ -1,4 +1,4 @@
-function [index_global_Yeo_17,Maj_Yeo_17,index_global_Yeo_7,Maj_Yeo_7] = Wang_parcellation(M,HCP_subj,label_134_cort,Shen268_mapto_Yeo7network,Shen268_mapto_Yeo17network)
+function [index_global_Yeo_17,Maj_Yeo_17,index_global_Yeo_7,Maj_Yeo_7] = wang_parcellation(M,HCP_subj,label_134_cort,Shen268_mapto_Yeo7network,Shen268_mapto_Yeo17network)
 
     % M is an output of the function "import_HCP_data.m" containing the
     % rest scan data with the following format:

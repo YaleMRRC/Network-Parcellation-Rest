@@ -1,4 +1,4 @@
-function Hamming_dist_25_25_825_allreazliations = Greedy_upperbound(M,HCP_subj,label_134_cort,K_max)
+function Hamming_dist_25_25_825_allreazliations = hamming_distance_analysis(M,HCP_subj,label_134_cort,K_max)
 
     % M is an output of the function "import_HCP_data.m" containing the
     % rest scan data with the following format:
@@ -15,7 +15,7 @@ function Hamming_dist_25_25_825_allreazliations = Greedy_upperbound(M,HCP_subj,l
     % Hamming_dist_25_25_825_allreazliations = the hamming distance
     % analysis according to the pipeline described in the paper
     
-    % load /Users/Mehraveh/Documents/MATLAB/M_Rests.mat
+    
     clc
 
     subjsLR = intersect(HCP_subj{1,1},HCP_subj{2,1});
