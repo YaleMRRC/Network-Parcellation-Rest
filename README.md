@@ -18,11 +18,11 @@ The main function in this set is **"parcellation_rest.m"**, which generates the 
 
 1. Using the link on the top right corner of this page, clone this repository to your local computer using the following command: 
 ```bash
-git clone https://github.com/YaleMRRC/Network-Parcellation.git
+git clone https://github.com/YaleMRRC/Network-Parcellation-Rest.git
 ``` 
 2. In MATLAB add the path to your script or in your workspace: 
 ```matlab
-addpath('localpath/Network-Parcellation/')
+addpath('localpath/Network-Parcellation-Rest/')
 ```
 3. Load in HCP resting-state data from your local directory (datadir) by running the following function:
 ```matlab
@@ -37,7 +37,7 @@ parcellation_rest(M,HCP_subj,label_134_cort,K_max)
 The rest of the functions are either auxiliary functions that are called by the meain function, or are used for other analyses in the paper.
 
 
-For further questions please raise an issue [here](https://github.com/YaleMRRC/Network-Parcellation/issues).
+For further questions please raise an issue [here](https://github.com/YaleMRRC/Network-Parcellation-Rest/issues).
 
 [1] Salehi, M., Karbasi, A., Shen, X., Scheinost, D., & Constable, R. T. (2018). An exemplar-based approach to individualized parcellation reveals the need for sex specific functional networks. NeuroImage, 170, 54-67.
 
