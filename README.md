@@ -4,10 +4,11 @@
 	<img src ="images/rest_individualzied_networks.jpg" height="347" />
 </p>
 
-These set of functions are used to generate the results in paper "An exemplar-based approach to individualized parcellation reveals the need for sex specific functional networks," Salehi et al., NeuroImage 2018. This paper uses data from two resting-state sessions (REST1 and REST2) of the Human Connectome Project (HCP) S900 release. This repository includes MATLAB functions to:
+These set of functions are used to generate the anlaysis in Salehi et al. [1]. This paper uses data from two resting-state sessions (REST1 and REST2) of the Human Connectome Project (HCP) S900 release [2]. This repository includes MATLAB functions to:
+
 1) Import HCP data into MATLAB's workspace: **import_HCP_data.m**
 2) Generate individualized resting-state parcellations: **Parcellation_rest.m**
-3) Computes and compares internal clustering quality measures such as Dunn index and Davies-Bouldin index (DB): **Comparison_DB_Dunn.m**
+3) Compute and compare internal clustering quality measures such as Dunn index and Davies-Bouldin index (DB): **Comparison_DB_Dunn.m**
 4) Compute the reproducibility of tha parcellations between different sessions of resting-state: **REST1_REST2_reproducibility.m**
 5) Develop predictive models based on node-to-network assignment (NNA) vectors using gradient boosting machines (GBM): **Exemplar_based_predictive_analysis.m**
 6) Compute the importance of features (here nodes) in the predictive model's performance: **Feature_importance_analysis.m**
@@ -37,3 +38,7 @@ The rest of the functions are either auxiliary functions that are called by the 
 
 
 For further questions please raise an issue [here](https://github.com/YaleMRRC/Network-Parcellation/issues).
+
+[1] Salehi, M., Karbasi, A., Shen, X., Scheinost, D., & Constable, R. T. (2018). An exemplar-based approach to individualized parcellation reveals the need for sex specific functional networks. NeuroImage, 170, 54-67.
+
+[2] Van Essen, D. C., Smith, S. M., Barch, D. M., Behrens, T. E., Yacoub, E., Ugurbil, K., & Wu-Minn HCP Consortium. (2013). The WU-Minn human connectome project: an overview. Neuroimage, 80, 62-79.

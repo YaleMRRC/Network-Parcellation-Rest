@@ -1,6 +1,4 @@
-
 function S_opt_all = exemplar(sqD,sqd,t,n,Karg,l)
-
 
 K=Karg;
 S_opt=[];
