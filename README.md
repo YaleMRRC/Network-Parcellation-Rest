@@ -34,7 +34,7 @@ parcellation_rest(M,HCP_subj,label_134_cort,K_max)
 ```
    where **label_134_cort** is a vector indicating whether each node belongs to cortex, subcortex, or cerebellum. This is used to automatically include/exclude specific parts of the brain from the analysis. **K_max** indicates the number of networks.
 
-The rest of the functions are either auxiliary functions that are called by the meain function, or are used for other analyses in the paper. Below you can find the details about the maind functions in this set:
+The rest of the functions are either auxiliary functions that are called by the meain function, or are used for other analyses in the paper.
 
 
 For further questions please raise an issue [here](https://github.com/YaleMRRC/Network-Parcellation/issues).
