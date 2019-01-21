@@ -30,9 +30,9 @@ addpath('localpath/Network-Parcellation-Rest/')
 ```
 4. Run the following: 
 ```matlab
-parcellation_rest(M,HCP_subj,label_134_cort,K_max)
+[S_opt_all, index_global, Maj, F = parcellation_rest(M,HCP_subj,label_134_cort,K_max)
 ```
-   where **label_134_cort** is a vector indicating whether each node belongs to cortex, subcortex, or cerebellum. This is used to automatically include/exclude specific parts of the brain from the analysis. **K_max** indicates the number of networks.
+   where **label_134_cort** is a vector indicating whether each node belongs to cortex, subcortex, or cerebellum. This is used to automatically include/exclude specific parts of the brain from the analysis. **K_max** indicates the number of networks. **S_opt_all** is the set of identified exemplars, **index_global** consists of the individualized parcellation vectors where every element represents the network number that each node is assigned to, **Maj** is the group parcellation vector computed by taking the relative majority voting, and **F** represents the number of votes for the group assignments.
 
 The rest of the functions are either auxiliary functions that are called by the meain function, or are used for other analyses in the paper.
 
