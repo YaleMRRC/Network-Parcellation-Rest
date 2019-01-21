@@ -1,7 +1,7 @@
 # NetworkParcellation
 
 <p align="center">
-	<img src ="images/rest_individualzied_networks.jpg" width="480" height="347" />
+	<img src ="images/rest_individualzied_networks.jpg" height="347" />
 </p>
 
 These set of functions are used to generate the results in paper "An exemplar-based approach to individualized parcellation reveals the need for sex specific functional networks," Salehi et al., NeuroImage 2018. This paper uses data from two resting-state sessions (REST1 and REST2) of the Human Connectome Project (HCP) S900 release. This repository includes MATLAB functions to:
