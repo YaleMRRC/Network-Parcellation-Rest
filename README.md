@@ -46,6 +46,9 @@ The rest of the functions are either auxiliary functions that are called by the 
 
 For further questions please raise an issue [here](https://github.com/YaleMRRC/Network-Parcellation-Rest/issues).
 
+
+### References
+
 [1] Salehi, M., Karbasi, A., Shen, X., Scheinost, D., & Constable, R. T. (2018). An exemplar-based approach to individualized parcellation reveals the need for sex specific functional networks. NeuroImage, 170, 54-67.
 
 [2] Van Essen, D. C., Smith, S. M., Barch, D. M., Behrens, T. E., Yacoub, E., Ugurbil, K., & Wu-Minn HCP Consortium. (2013). The WU-Minn human connectome project: an overview. Neuroimage, 80, 62-79.
